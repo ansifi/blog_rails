@@ -34,12 +34,12 @@ default: &default
 
 development:
   <<: *default
-  database: myapp_development
+  database: event_db
 
 test:
   <<: *default
-  database: myapp_test
+  database: event_db_test
 
 production:
   <<: *default
-  database: myapp_production
+  database: event_db_production

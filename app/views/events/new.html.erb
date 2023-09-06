@@ -1,0 +1,17 @@
+<!-- app/views/events/new.html.erb -->
+
+<h1>Create a New Event</h1>
+
+<%= form_with(model: @event, local: true) do |form| %>
+  <!-- Event form fields (e.g., title, date, location, description) -->
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <!-- Other fields... -->
+
+  <div class="actions">
+    <%= form.submit 'Create Event' %>
+  </div>
+<% end %>

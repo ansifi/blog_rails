@@ -1,0 +1,8 @@
+<!-- app/views/attendances/new.html.erb -->
+
+<h1>RSVP</h1>
+
+<%= form_for(@attendance) do |f| %>
+  <%= f.hidden_field :attended_event_id, value: @event.id %>
+  <%= f.submit "RSVP", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,18 @@
+<!-- app/views/events/index.html.erb -->
+
+<h1>Events</h1>
+
+<% if @events.empty? %>
+  <p>No events are available at the moment. <%= link_to "Create a new event", new_event_path %></p>
+<% else %>
+    <% @events.each do |event| %>
+        <h2><%= event.title %></h2>
+        <p><strong>Date:</strong> <%= event.date.strftime('%B %d, %Y %I:%M %p') %></p>
+        <p><strong>Location:</strong> <%= event.location %></p>
+        <p><strong>Description:</strong> <%= event.description %></p>
+        
+        <% if current_user %>
+            <%= link_to "RSVP", event_attendances_path(event), method: :post, class: "btn btn-primary" %>
+        <% end %>
+    <% end %>
+<% end %>
