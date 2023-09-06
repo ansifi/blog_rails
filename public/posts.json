@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "title": "Introduction to Ruby on Rails",
+      "content": "Ruby on Rails is a web application framework..."
+    },
+    {
+      "id": 2,
+      "title": "Getting Started with React",
+      "content": "React is a JavaScript library for building user interfaces..."
+    },
+    {
+      "id": 3,
+      "title": "Database Design Best Practices",
+      "content": "Learn about the best practices for designing a database schema..."
+    },
+    {
+      "id": 4,
+      "title": "RESTful API Design",
+      "content": "Designing RESTful APIs for your web applications..."
+    },
+    {
+      "id": 5,
+      "title": "Authentication and Authorization",
+      "content": "Implementing user authentication and authorization in your app..."
+    }
+  ]
+  
